@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Седона</title>
+	</head>
+	<body>
+		<!--Шапка-->
+		<header class="top-header">
+			<div class="container clear">
+				
+					<nav class="main-navigation">
+						<ul>
+							<li><a class="main-navigation__info" href="#">информация</a></li>
+							<li><a class="main-navigation__photo" href="#">фото и видео</a></li>
+							<li><a class="main-navigation__map" href="#">карта штата</a></li>
+							<li><a class="main-navigation__hotels" href="#">гостиница</a></li>
+						</ul>
+					</nav>
+					<div class="top-header__logo">
+						<img class="top-logo" src="" alt="logo"> 
+					</div>
+					
+			</div>
+		</header>	
+		<main class="container">
+			<div class="searchbox">
+				<div class="searchbox__left">
+					<form class="infrastructure" action="#" method="post">
+						<label class="infrastructure__title">Инфаструктура</label>
+						<input type="checkbox" class="infrastructure__input infrastructure__input--pool" value="swimming pool" name="infrastructure1">Бассейн<br>
+						<input type="checkbox" class="infrastructure__input infrastructure__input--parking" value="parking" name="infrastructure2">Парковка<br>
+						<input type="checkbox" class="infrastructure__input infrastructure__input--wi-fi" value="wi-fi" name="infrastructure3">Wi-Fi<br>
+					</form>
+				</div>
+				<div class="searchbox__middle">
+					<form class="accommodation" action="#" method="post">
+						<label class="accommodation__title">тип жилья:</label>
+						<input type="checkbox" class="accommodation__input accommodation__input--hotel" value="hotel" name="accommodation1">гостиница<br>
+						<input type="checkbox" class="accommodation__input accommodation__input--motel" value="motel" name="accommodation2">мотель<br>
+						<input type="checkbox" class="accommodation__input accommodation__input--apartment" value="apartment" name="accommodation3">апартаменты<br>
+					</form>
+				</div>
+				<div class="searchbox__right">
+					<form class="price" action="#" method="post">
+						<label for="price-field">Стоимость в сутки (Р):</label>
+						<img class="price__pic" src="#" width="318" height="36">
+						<input type="range" class="price__input name="price" id="price-field" min="0" max="3000" value="2000" step="10">
+						<button class="price__btn" value="Show">Показать</button>
+					</form>	
+				</div>
+			</div>
+			<div class="sorting">
+				<div class="sorting__left">
+					<b>Найдено:3</b>
+				</div>
+				<div class="sorting__items">
+					<h5>сортировка:</h5>
+					<a class="sorting__link" href="#">по цене</a>
+					<a class="sorting__link" href="#">по типу</a>
+					<a class="sorting__link" href="#">по рейтингу</a>
+				</div>
+				<div class="sorting__right">
+					<a href="#" class="sorting__icon--up"></a>
+					<a href="#" class="sorting__icon--down"></a>
+				</div>
+			</div>
+			<section class="catalog">
+				<div class="result-first">
+					<div class="result-first__left">
+						<figure class="result-first__pic">
+							<img src="http://placehold.it/150x100" alt="hotel-view">
+						</figure>
+						<div class="result-first__details">
+							<b>amara resort & spa</b>
+							<div class="result-first__index-right">
+								<p>гостиница</p>
+								<a href="#" class="btn__detail btn__hotel">подробнее</a>
+							</div>	
+							<div class="result-first__index-right">
+								<p>от 3500 р.</p>
+								<a href="#" class="btn__book btn__book--hotel">забронировать</a>
+							</div>	
+						</div>
+					</div>	
+					<div class="result-first__right">
+						<span class="result-first__rating">рейтинг:8,5</span>
+					</div>
+				</div>
+				
+				<div class="result-second">
+					<div class="result-second__left">
+						<figure class="result-second__pic">
+							<img src="http://placehold.it/150x100" alt="motel-view">
+						</figure>
+						<div class="result-second__details">
+							<b>desert quailinn</b>
+							<div class="result-second__index-right">
+								<p>гостиница</p>
+								<a href="#" class="btn__detail btn__motel">подробнее</a>
+							</div>	
+							<div class="result-second__index-right">
+								<p>от 2000 р.</p>
+								<a href="#" class="btn__book btn__book--hotel">забронировать</a>
+							</div>	
+						</div>
+					</div>	
+					<div class="result-second__right">
+						<span class="result-second__rating">рейтинг:8,9</span>
+					</div>
+				</div>
+				
+				<div class="result-third">
+					<div class="result-third__left">
+						<figure class="result-third__pic">
+							<img src="http://placehold.it/150x100" alt="apartment-view">
+						</figure>
+						<div class="result-third__details">
+							<b>villas at poco diablo</b>
+							<div class="result-third__index-right">
+								<p>гостиница</p>
+								<a href="#" class="btn__detail btn__hotel">подробнее</a>
+							</div>	
+							<div class="result-third__index-right">
+								<p>от 4000 р.</p>
+								<a href="#" class="btn__book btn__book--hotel">забронировать</a>
+							</div>	
+						</div>
+					</div>	
+					<div class="result-third__right">
+						<span class="result-third__rating">рейтинг:9,2</span>
+					</div>
+				</div>
+			</section>	
+		</main>
+		<footer class="container">
+			<div class="info-link">
+				<a class="info-link__page">#visitSEDONA</a>
+			</div>
+			<div class="social">
+				<a href="#" class="social__btn social__btn--tw"> <img src="http://placehold.it/150x100">Twitter</a>
+				<a href="#" class="social__btn social__btn--fb"> <img src="http://placehold.it/150x100">Facebook</a>
+				<a href="#" class="social__btn social__btn--gp"> <img src="http://placehold.it/150x100">Google play</a>
+			</div>
+			<div class="creator">
+				<p class="creator__text">website by</p>
+				<div class="creator__logo">
+					<img src="http://placehold.it/150x100"> 
+				</div>
+				
+			</div>
+		</footer>
+	</body>
+</html>	
